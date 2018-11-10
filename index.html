@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CopyCat Gaming, INC Video Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
+</head>
+<body>
+    <h1>Lena the Warrior RPG Preview</h1>
+        <h2>Pick the level, weapon type, element, and attack type to determine attack damage!</h2>
+                <span id="show-level"></span><br>
+                Lena's Level (1-90):
+                <input type="range" id="level" min="1" max="90" onchange="show_value(this.value);" value="1"><br><br>
+                Weapon Type: 
+                <select id="weapon-type">
+                    <option value="mace">Mace</option>
+                    <option value="axe">Axe</option>
+                    <option value="sword">Sword</option>
+                </select>
+                Weapon Element: 
+                <select id="weapon-element">
+                    <option value="physical">Physical (5% DMG Boost w/Punch Attack!)</option>
+                    <option value="fire">Fire (10% DMG Boost w/Fire Smite Attack!)</option>
+                    <option value="ice">Ice (15% DMG Boost w/Frosty Cleave Attack!)</option>
+                </select>
+                Attack Type:
+                <select id="attack-type">
+                    <option value="punch">Punch</option>
+                    <option value="fire-smite">Fire Smite</option>
+                    <option value="frosty-cleave">Frosty Cleave</option>
+                </select><br><br>
+                <button id="attack">Attack!</button>
+            <h3>Min Damage: <span id="min-damage"></span></h3>    
+            <h3>Max Damage: <span id="max-damage"></span></h3>
+            <h3>DPS: <span id="dps"></span></h3>
+            <br>
+            <h3>Lena's Vitality: <span id="vitality"></span></h3>
+<script src="script.js"></script>
+</body>
+</html>
